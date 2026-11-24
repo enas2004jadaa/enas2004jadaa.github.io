@@ -668,13 +668,21 @@ body.dark .project-tech li {
     color: var(--accent-2);
 }
 
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
 .training-card {
-    background-color: var(--surface);
-    padding: 38px 40px;
+   background-color: var(--surface);
+    padding: 32px 34px;
     border-radius: var(--radius);
     border-left: 4px solid var(--accent-2);
     box-shadow: var(--shadow-sm);
-    max-width: 900px;
+    display: flex;
+    flex-direction: column;
 }
 
 .training-card h3 {
@@ -943,6 +951,10 @@ body.dark .project-tech li {
     .projects-grid,
     .cert-list,
     .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-grid {
         grid-template-columns: 1fr;
     }
 
